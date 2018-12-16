@@ -10,7 +10,6 @@
 
 <h2>Video Tutorial!</h2>
 
-<p>https://youtu.be/uz0nvfiynHY</p>
 
 <p>1) Install Python 3.6.4 (Download Link <a href="https://www.python.org/ftp/python/3.6.4/python-3.6.4.exe">Here</a>).</p>
 
@@ -33,9 +32,6 @@
 
 <p> Now Just double click Main.py And your bot should get online!</p>
 
-<h2>If You Have Any Issues: </h2>
-
-<p>Join My Support Server <a href="https://discord.gg/aXZMuCN">Here</a>
 
 </body>
 </html>
