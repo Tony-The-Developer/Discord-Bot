@@ -15,7 +15,6 @@ async def on_ready():
     print("ID: %s"%bot.user.id)
     print('Server count:', str(len(bot.servers)))
     print('User Count:',len(set(bot.get_all_members())))
-    print("Py Lib Version: %s"%discord.__version__)
     print("===================================")
 
 @bot.command(pass_context=True)
