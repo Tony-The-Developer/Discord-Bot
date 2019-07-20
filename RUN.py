@@ -3,10 +3,12 @@ import discord
 from discord.ext import commands
 from discord.ext.commands import Bot
 import time
-import Config
+import config
+import random
 
 #Determine the bots prefix
-bot = commands.Bot(command_prefix = Config.PREFIX)
+bot = commands.Bot(command_prefix = config.PREFIX)
+
 
 @bot.event
 async def on_ready():
@@ -16,6 +18,7 @@ async def on_ready():
     print('Server count:', str(len(bot.servers)))
     print('User Count:',len(set(bot.get_all_members())))
     print("===================================")
+
 
 @bot.command(pass_context=True)
 async def ping(ctx):
@@ -27,8 +30,8 @@ async def ping(ctx):
     color = ''.join([random.choice('0123456789ABCDEF') for x in range(6)])
     color = int(color, 16)
     data = discord.Embed(description = thedata, colour=discord.Colour(value = color))
-    data.set_footer(text="{} | Requested by: {}".format(Config.BOTNAME, ctx.message.author))
+    data.set_footer(text="{} | Requested by: {}".format(config.BOTNAME, ctx.message.author))
     await bot.say(embed = data)
 
-bot.run(Config.TOKEN)
+bot.run(config.TOKEN)
 
